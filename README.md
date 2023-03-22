@@ -5,17 +5,14 @@
 
 ## Overview
 OpenSCAD script to generate cubical "science camera" style housings for the common ~40x40mm board-level USB camera modules that can be found on the Bay site and the River site.
-Some of these modules are quite nice, with 4K and autofocus, and this makes little 3D printable houses for them.
+Some of these modules are quite nice, with 4K and autofocus, and this makes little 3D printable houses for them.  
 
-<img src="img/example.png" align="left">  
+![Example Housing](img/example.png)  
 
 
----
 ## Usage
 
-
-<img src="img/screenshot.png" align="left">  
-
+![Screenshot](img/screenshot.png)  
 
 Install [OpenSCAD](https://openscad.org) and the [Round-Anything Library](https://github.com/Irev-Dev/Round-Anything).
 
@@ -31,4 +28,5 @@ If printing in PLA, I recommend making the tripod stud hole oversized and pushin
 ---
 ## References
 [OpenSCAD](https://openscad.org/)
+
 [Round-Anything Library](https://github.com/Irev-Dev/Round-Anything)
