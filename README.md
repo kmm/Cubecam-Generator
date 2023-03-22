@@ -25,8 +25,13 @@ If printing in PLA, I recommend making the tripod stud hole oversized and pushin
 
 **Brass inserts can be found using the search incantation "1/4-20 threaded heat set insert" on the River site.**
 
----
+
 ## References
 [OpenSCAD](https://openscad.org/)
 
 [Round-Anything Library](https://github.com/Irev-Dev/Round-Anything)
+
+
+## License
+
+MIT
