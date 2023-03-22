@@ -8,12 +8,14 @@ OpenSCAD script to generate cubical "science camera" style housings for the comm
 Some of these modules are quite nice, with 4K and autofocus, and this makes little 3D printable houses for them.
 
 <img src="img/example.png" align="left">
-<br>
+
+
 ---
 ## Usage
-<br>
+
+
 <img src="img/screenshot.png" align="left">
-<br>
+
 
 Install [OpenSCAD](https://openscad.org) and the [Round-Anything Library](https://github.com/Irev-Dev/Round-Anything).
 
