@@ -1,18 +1,33 @@
 include <Round-Anything/polyround.scad>
 
+// Enclosure width
 width = 50;
+// Enclosure height
 height = 50;
+// Enclosure depth
 depth = 37;
+// Enclosure wall hhickness
 wallThickness = 3;
+// Enclosure corner fillet radius
 cornerRadius = 6;
+// OD of internal mounting posts for module
 postOD = 5;
+// ID of internal mounting posts for module
 postID = 1.3;
+// Height of internal mounting posts
 postHeight = 18;
+// Square pattern spacing of internal mounting posts
 postSpacing = 34;
+// Size of the hole the lens pokes through
 apertureDiameter = 20;
+// OD of the protrusion ("snoot") on front of the housing
 snootOD = 30;
+// ID of snoot protrusion
 snootID = 25;
+// Length of the snoot
 snootLength = 5;
+// Diameter of the tripod mounting stud hole
+studHoleDiameter = 5.8;
 
 hps = postSpacing / 2;
 posts = [[hps, hps], [hps, -hps], [-hps, -hps], [-hps, hps]];
@@ -78,12 +93,12 @@ difference() {
             translate([0, 0, -snootLength-1])
             cylinder(snootLength, d=snootID);
         };
-        
+        // Tripod Mount
         translate([0, -dimY, dimZ/2]) {
             rotate([90, 0, 0]) {
                 difference() {
                     cylinder(h=6, d1=20, d2=14);
-                    cylinder(h=15, d=5.8);
+                    cylinder(h=15, d=studHoleDiameter);
                 }
             }
         }
