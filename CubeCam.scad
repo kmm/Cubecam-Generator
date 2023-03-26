@@ -154,6 +154,17 @@ translate([0, 0, dimZ + 10]) {
                           [-intDimX+0.25, intDimY-0.25, intCornerRadius]
                         ],10));
                     };
+                    // internal cutout for lip
+                    translate([0,0,-0.01]) {
+                        linear_extrude(2) {
+                            polygon(polyRound([
+                              [intDimX-1.5, intDimY-1.5, intCornerRadius],
+                              [intDimX-1.5, -intDimY+1.5, intCornerRadius],
+                              [-intDimX+1.5, -intDimY+1.5, intCornerRadius],
+                              [-intDimX+1.5, intDimY-1.5, intCornerRadius]
+                            ],10));
+                        };
+                    };
                     translate([-intDimX, 0, -3]) { 
                         cylinder(5, d=wallThickness*3);
                     };
@@ -163,6 +174,7 @@ translate([0, 0, dimZ + 10]) {
                 };
             };
         };
+        // "mouse hole" for USB cable exit
         translate([0, -intDimY+wallThickness, -3]) {
             union() {
                 cylinder(15, d=5);
